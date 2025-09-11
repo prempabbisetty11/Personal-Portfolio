@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34470c630b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#What-I-Do">What-I-Do</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI & ML Major</p>
+                <h1>Hi, I'm <span>Prem Pabbisetty</span><br> From Vignan University</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------about-------------- -->
+<div id ="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/1696349697570.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Welcome to my portfolio website!</p>
+                <p>Hi, I’m Prem Pabbisetty, a B.Tech student in Artificial Intelligence and Machine Learning. I enjoy solving problems through code, building projects, and exploring how AI can make a real impact.
+
+                    I’ve worked with Python, Java, SQL, and ML algorithms, solved 100+ LeetCode problems, and built projects like a TV series theme analyzer and decision tree models. I’m also exploring freelancing and love learning new tools to grow my skills.
+
+                    Outside tech, I enjoy brainstorming startup ideas and exploring streetwear and design trends.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AIML</span>Student</li>
+                        <li><span>Web Development</span> (HTML, CSS, JavaScript)</li>
+                        <li><span>Python</span></li>
+                        <li><span>SQL</span></li>
+                        <li><span>APIs</span> (fetching and integrating)</li>
+                        <li><span>Git & GitHub</span></li>
+                        <li><span>Machine Learning</span> (Decision Trees, Random Forests, Scikit-learn)</li>
+                        <li><span>Natural Language Processing</span> (NLP, text data analysis)</li>
+                        <li><span>Gradio</span> (for ML web apps)</li>
+                        <li><span>Data Handling</span> (Pandas, NumPy, Excel)</li>
+                        <li><span>Problem-Solving</span> (100+ LeetCode problems)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Portfolio Website</span> – A simple personal portfolio built with HTML, CSS, and JavaScript.</li>
+                        <li><span>Weather App</span> – A web app that fetches and displays weather data using APIs.</li>
+                        <li><span>AI TV Series Analysis</span> – An ML project analyzing TV series themes using NLP techniques.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Secondary School</span> – Sri Chaitanya Vidya Vihar, Kolluru (Completed 10th in 2021)</li>
+                        <li><span>Intermediate</span> – NRI Junior College, Tenali (2021 - 2023)</li>
+                        <li><span>B.Tech (AI & ML)</span> – Vignan University (2023 - 2027, Present)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- ---------services--------- -->
+ <div id="What-I-Do">
+    <div class="container">
+        <h1 class="subtitle">What I Do</h1>
+        <div class="whatido-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I build simple and responsive websites using HTML, CSS, and JavaScript, including personal portfolios and apps like a Weather App.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Artificial Intelligence & Machine Learning</h2>
+                <p>I work with Python, Scikit-learn, and ML algorithms such as Decision Trees and Random Forests to solve real-world problems.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Natural Language Processing (NLP)</h2>
+                <p>I explore text data analysis and zero-shot classification models, with projects like an AI TV Series Theme Analyzer.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-lightbulb"></i>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Handling & Problem-Solving</h2>
+                <p>I analyze and organize data using SQL, Excel, Pandas, and NumPy, and I’ve solved 100+ problems on LeetCode to sharpen my algorithmic skills.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/portfolio1.jpg">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and user-friendly websites with modern web technologies.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/portfolio2.png">
+                <div class="layer">
+                    <h3>AIML</h3>
+                    <p>Designing intelligent models that learn from data to solve real-world problems.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/portfolio3.png">
+                <div class="layer">
+                    <h3>NLP</h3>
+                    <p>Working on AI systems that understand and process human language.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/portfolio4.jpg">
+                <div class="layer">
+                    <h3>Data Handling</h3>
+                    <p>Analyzing, organizing, and interpreting data to drive meaningful solutions.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View All Projects</a>
+    </div>
+</div>
+
+
+<!-- ---------contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>premsai620@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 6300653713</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prem-pabbisetty-037a89262/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/prempabbisetty11"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/prem_pabbisetty__"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com/prem_pabbisetty__"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="Prem_Pabbisetty_CV_.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 2025 @ Prem Pabbisetty. All rights reserved. Designed and developed with <i class="fa-solid fa-heart"></i>.</p>
+    </div>
+</div>
+
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openMenu(){
+        sidemenu.style.right = "0";
+    }
+    function closeMenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz2P137o5BeeDWEOnWU9VKMVe-_rmby9zR-jVvKDTOyXwVBtchNjf9z-bEcnge52aQHkg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){ msg.innerHTML = "" }, 5000);
+        form.reset();
+      })
+      .catch(error => {
+        msg.innerHTML = "Error! Please try again.";
+      });
+  })
+</script>
+
+</body>
+</html>
