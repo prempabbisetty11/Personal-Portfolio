@@ -387,6 +387,11 @@ form .btn2{
 
 /* ----------------css for small screen-------------- */
 
+nav .fas{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px){
     #header{

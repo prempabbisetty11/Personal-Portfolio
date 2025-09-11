@@ -19,9 +19,9 @@
                     <li><a href="#What-I-Do">What-I-Do</a></li>
                     <li><a href="#portfolio">My Work</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars" onclick="openMenu()"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>AI & ML Major</p>
@@ -204,10 +204,10 @@
 
 <script>
     var sidemenu = document.getElementById("sidemenu");
-    function openMenu(){
+    function openmenu(){
         sidemenu.style.right = "0";
     }
-    function closeMenu(){
+    function closemenu(){
         sidemenu.style.right = "-200px";
     }
 
